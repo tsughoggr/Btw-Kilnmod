@@ -27,10 +27,15 @@ public abstract class VIPKilnRecipes{
 
 
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStack), new Object[] { new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired),  new ItemStack(Item.silk)});
+		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStack), new Object[] { new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired), new ItemStack(FCBetterThanWolves.fcItemBrickUnfired),  new ItemStack(FCBetterThanWolves.fcItemHempFibers)});
+
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStack), new Object[] {new ItemStack(FCBetterThanWolves.fcBlockUnfiredClay),  new ItemStack(Item.silk)});
+		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStack), new Object[] {new ItemStack(FCBetterThanWolves.fcBlockUnfiredClay),  new ItemStack(FCBetterThanWolves.fcItemHempFibers)});
 
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStackDry), new Object[] { new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry),  new ItemStack(Item.silk)});
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStackCooked), new Object[] { new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick),  new ItemStack(Item.silk)});
+		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStackDry), new Object[] { new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry), new ItemStack(VIPKilns.pkItemBrickDry),  new ItemStack(FCBetterThanWolves.fcItemHempFibers)});
+		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkBlockBrickStackCooked), new Object[] { new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick), new ItemStack(Item.brick),  new ItemStack(FCBetterThanWolves.fcItemHempFibers)});
 
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(FCBetterThanWolves.fcItemBrickUnfired, 8), new Object[]{ new ItemStack(VIPKilns.pkBlockBrickStack)});
 		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(VIPKilns.pkItemBrickDry, 8), new Object[]{ new ItemStack(VIPKilns.pkBlockBrickStackDry)});
@@ -139,13 +144,90 @@ public abstract class VIPKilnRecipes{
 			'S', new ItemStack(Item.silk, 1),
 			'M', new ItemStack(FCBetterThanWolves.fcItemWolfRaw.itemID, 1,0)
 		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 0),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(FCBetterThanWolves.fcItemMuttonRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 1),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.beefRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 2),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.chickenRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 3),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.porkRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 4),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.fishRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 5),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(FCBetterThanWolves.fcItemBeastLiverRaw.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 6),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.rottenFlesh.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 7),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.carrot.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 8),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(Item.potato.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 9),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(FCBetterThanWolves.fcItemRawMysteryMeat.itemID, 1,0)
+		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockTandoori, 1, 10),
+		 	new Object[]{"SCS", "CMC", "CCC",
+			'C', new ItemStack(Item.clay, 1),
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers, 1),
+			'M', new ItemStack(FCBetterThanWolves.fcItemWolfRaw.itemID, 1,0)
+		});
 
 		VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe(VIPKilns.pkBlockTandooriCooked.blockID, Block.fire.blockID, 40, 10, 850);
 		VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe(VIPKilns.pkBlockTandoori.blockID, VIPKilns.pkBlockTandooriCooked.blockID,50,10,450);
 
 		for(int i=0;i<16;++i){
 			VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe(new ItemStack(VIPKilns.pkBlockTandoori, 1, i), 0xF, new ItemStack(VIPKilns.pkBlockTandooriCooked, 1, i), true, false, 450, 50, 10);
-			FCCraftingManagerKiln.instance.addRecipe(new ItemStack[]{new ItemStack(VIPKilns.pkBlockTandooriCooked.blockID, 1, i)}, VIPKilns.pkBlockTandoori, i, (byte)3);
+			FCCraftingManagerKiln.instance.addRecipe(new ItemStack[]{new ItemStack(VIPKilns.pkBlockTandooriCooked.blockID, 1, i)}, VIPKilns.pkBlockTandoori, new int[] { i}, (byte)3);
 		}
 	}
 	public static void
@@ -160,10 +242,20 @@ public abstract class VIPKilnRecipes{
 			'B', new ItemStack(Item.beefCooked),
 			'F', new ItemStack(Item.fishCooked)
 		});
+		CraftingManager.getInstance().addRecipe(
+			new ItemStack(VIPKilns.pkBlockDonner.blockID, 1, 12),
+			new Object[]{ "CSC", "MAM", "BFB",
+			'S', new ItemStack(FCBetterThanWolves.fcItemHempFibers),
+			'C', new ItemStack(Item.chickenCooked),
+			'A', new ItemStack(FCBetterThanWolves.fcBlockAxle),
+			'M', new ItemStack(FCBetterThanWolves.fcItemMuttonCooked),
+			'B', new ItemStack(Item.beefCooked),
+			'F', new ItemStack(Item.fishCooked)
+		});
 		VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe(VIPKilns.pkBlockDonner.blockID, VIPKilns.pkBlockDonnerCooked.blockID, 40, 3,550);
 		VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe( VIPKilns.pkBlockDonnerCooked.blockID, Block.fire.blockID, 35, 3, 900);
 		for(int i=0;i<16;++i){
-			FCCraftingManagerKiln.instance.addRecipe(new ItemStack[] {new ItemStack(VIPKilns.pkBlockDonnerCooked.blockID, 1, i)}, VIPKilns.pkBlockDonner, i, (byte)3);
+			FCCraftingManagerKiln.instance.addRecipe(new ItemStack[] {new ItemStack(VIPKilns.pkBlockDonnerCooked.blockID, 1, i)}, VIPKilns.pkBlockDonner, new int[] {i}, (byte)3);
 		}
 	}
 	public static void
@@ -375,6 +467,7 @@ public abstract class VIPKilnRecipes{
 			true,
 			7000, 1, 200
 		);
+
 		CraftingManager.getInstance().addShapelessRecipe(
 			new ItemStack(VIPKilns.pkBlockUnfiredBrickStackGold),
 			new Object[] {
@@ -459,6 +552,93 @@ public abstract class VIPKilnRecipes{
 				new ItemStack(Item.silk)
 			}
 		);
+
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockUnfiredBrickStackGold),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickGold),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockUnfiredBrickStackIron),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickIron),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockUnfiredBrickStackDiamond),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(VIPKilns.pkItemUnfiredBrickDiamond),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockCookedBrickStackGold),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(VIPKilns.pkItemBrickGold),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockCookedBrickStackIron),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(VIPKilns.pkItemBrickIron),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+		CraftingManager.getInstance().addShapelessRecipe(
+			new ItemStack(VIPKilns.pkBlockCookedBrickStackDiamond),
+			new Object[] {
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(VIPKilns.pkItemBrickDiamond),
+				new ItemStack(FCBetterThanWolves.fcItemHempFibers)
+			}
+		);
+
+
 		VIPCraftingManagerPrimitiveKiln.getInstance().addRecipe(
 			new ItemStack(VIPKilns.pkBlockUnfiredBrickStackGold),
 			new ItemStack(VIPKilns.pkBlockCookedBrickStackGold),

@@ -25,6 +25,18 @@ public class BlockSnowBlock extends Block {
    }
 
    static {
-      new  VIPKilns();
+	try {
+		Class.forName("net.minecraft.src.VIPKilns");
+		new  VIPKilns();
+	} catch (ClassNotFoundException e){}
+	try {
+		Class.forName("net.minecraft.src.TSGGloryhole");
+		new TSGGloryhole();
+	} catch (ClassNotFoundException e){}
+	try {
+		Class.forName("net.minecraft.src.TSGTheifarrows");
+		new TSGTheifarrows();
+	} catch (ClassNotFoundException e){}
+
    }
 }
